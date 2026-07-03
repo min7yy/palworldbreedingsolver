@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Pal Route Solver</title>
+<meta name="description" content="Shortest breeding path between any two Palworld pals — exact game data, works offline.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="brand">
+    <div class="mark">P</div>
+    <div>
+      <h1>Pal Route Solver</h1>
+      <span>Shortest breeding path · exact game data</span>
+    </div>
+  </div>
+  <span class="dbv" id="dbv"></span>
+</header>
+
+<div class="pickers">
+  <div class="pane">
+    <div class="lbl"><span>Start</span><span class="sel-name" id="ss"></span></div>
+    <div class="search">⌕<input type="text" id="qs" placeholder="Search pals…" oninput="renderList('s')"></div>
+    <div class="list" id="ls"></div>
+  </div>
+  <div class="pane">
+    <div class="lbl"><span>Target</span><span class="sel-name" id="st"></span></div>
+    <div class="search">⌕<input type="text" id="qt" placeholder="Search pals…" oninput="renderList('t')"></div>
+    <div class="list" id="lt"></div>
+  </div>
+</div>
+<div class="swapbar"><button onclick="swap()"><span>⇅</span><span>Swap</span></button></div>
+
+<div id="out"><div class="msg idle">Select a <span class="kbd">start</span> and <span class="kbd">target</span> pal to solve the fastest route.</div></div>
+
+<footer>
+  Exact lookup of the game's breeding table · 226 pals incl. DLC · passives carry through every step.
+  Partner options are unordered — any listed partner works identically.
+</footer>
+</div>
+
+<script src="data/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
