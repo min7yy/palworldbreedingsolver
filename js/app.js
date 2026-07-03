@@ -179,6 +179,5 @@ function toggleStep(i) {
   ld.classList.add('show');
 }
 
-// Initial paint: show the data version, then render the (empty) pickers + idle message.
-document.getElementById('dbv').textContent = `DB ${VERSION}`;
+// Initial paint: render the (empty) pickers + idle message.
 refresh();
