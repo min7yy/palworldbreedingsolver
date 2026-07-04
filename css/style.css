@@ -81,6 +81,18 @@ h1{font-size:1.25rem;font-weight:600;letter-spacing:-.015em;}
 .link:hover .gen{color:var(--t1);}
 .link.open .gen{background:var(--accent-soft);color:var(--accent);}
 .link:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:8px;}
+.link.static{cursor:default;}
+.link.static:hover .gen{color:var(--t3);}
+
+/* legendary-free alternate route */
+.alt{margin-top:.8rem;}
+.alt-toggle{display:block;width:100%;background:var(--warn-soft);color:var(--warn);border:none;border-radius:10px;padding:.7rem 1rem;font-family:inherit;font-size:.86rem;line-height:1.5;text-align:left;cursor:pointer;transition:background .12s;}
+.alt-toggle:hover{background:#332B1E;}
+.alt-toggle.static{cursor:default;}
+.alt-toggle.static:hover{background:var(--warn-soft);}
+.alt-chain-wrap{display:none;margin-top:.6rem;}
+.alt-chain-wrap.show{display:block;}
+
 .linkdetail{margin-top:1rem;border-top:1px solid var(--hair);padding-top:1rem;display:none;}
 .linkdetail.show{display:block;}
 .linkdetail .ttl{font-size:.85rem;color:var(--t2);margin-bottom:.6rem;}
